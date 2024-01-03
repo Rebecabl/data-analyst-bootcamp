@@ -54,4 +54,5 @@ A primeira parte do script concentra-se na criação da tabela `EmployeeDemograp
 
 
 ## SQLQUERY5: Consultas sobre diferentes tipos de junções (joins) em SQL, especificamente focando em junções internas (inner joins) e junções externas (outer joins). 
-![.](https://miro.medium.com/v2/resize:fit:966/1*6thPvnJs8cCj72oEy4EBfg.jpeg)
+![](https://upload.wikimedia.org/wikipedia/commons/c/c9/Joins_del_SQL.svg)
+
