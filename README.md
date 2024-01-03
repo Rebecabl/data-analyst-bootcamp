@@ -54,16 +54,4 @@ A primeira parte do script concentra-se na criação da tabela `EmployeeDemograp
 
 
 ## SQLQUERY5: Consultas sobre diferentes tipos de junções (joins) em SQL, especificamente focando em junções internas (inner joins) e junções externas (outer joins). 
-
-| **Caso** | **Código SQL** | **Explicação** |
-|----------|-----------------|-----------------|
-| 1        | ```sql SELECT * FROM SQLTutorial.dbo.EmployeeDemographics ``` | Seleciona todas as colunas da tabela `EmployeeDemographics`. |
-| 2        | ```sql SELECT * FROM SQLTutorial.dbo.EmployeeSalary ``` | Seleciona todas as colunas da tabela `EmployeeSalary`. |
-| 3        | ```sql SELECT * FROM SQLTutorial.dbo.EmployeeDemographics INNER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID ``` | Realiza uma junção interna entre `EmployeeDemographics` e `EmployeeSalary` na coluna `EmployeedID`. |
-| 4        | ```sql SELECT * FROM SQLTutorial.dbo.EmployeeDemographics FULL OUTER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID ``` | Realiza uma junção externa completa entre `EmployeeDemographics` e `EmployeeSalary` na coluna `EmployeedID`. |
-| 5        | ```sql SELECT * FROM SQLTutorial.dbo.EmployeeDemographics RIGHT OUTER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID ``` | Realiza uma junção externa direita entre `EmployeeDemographics` e `EmployeeSalary` na coluna `EmployeedID`. |
-| 6        | ```sql SELECT EmployeeDemographics.EmployeedID, FirstName, LastName, JobTitle, Salary FROM SQLTutorial.dbo.EmployeeDemographics INNER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID ``` | Recupera colunas específicas de ambas as tabelas usando uma junção interna. |
-| 7        | ```sql SELECT EmployeeDemographics.EmployeedID, FirstName, LastName, JobTitle, Salary FROM SQLTutorial.dbo.EmployeeDemographics RIGHT OUTER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID ``` | Recupera colunas específicas de ambas as tabelas usando uma junção externa direita. |
-| 8        | ```sql SELECT EmployeeDemographics.EmployeedID, FirstName, LastName, JobTitle, Salary FROM SQLTutorial.dbo.EmployeeDemographics LEFT OUTER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID ``` | Recupera colunas específicas de ambas as tabelas usando uma junção externa esquerda. |
-| 9        | ```sql SELECT EmployeeDemographics.EmployeedID, FirstName, Salary FROM SQLTutorial.dbo.EmployeeDemographics INNER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID WHERE FirstName <> 'Michael' ORDER BY Salary DESC ``` | Realiza uma junção interna, filtra os resultados e ordena por salário. |
-| 10       | ```sql SELECT JobTitle, AVG(Salary) FROM SQLTutorial.dbo.EmployeeDemographics INNER JOIN SQLTutorial.dbo.EmployeeSalary ON EmployeeDemographics.EmployeedID = EmployeeSalary.EmployeedID WHERE JobTitle = 'Salesman' GROUP BY JobTitle ``` | Realiza uma junção interna, filtra os resultados e calcula a média salarial para 'Salesman'. |
+![.](https://miro.medium.com/v2/resize:fit:966/1*6thPvnJs8cCj72oEy4EBfg.jpeg)
